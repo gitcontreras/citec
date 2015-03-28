@@ -1,0 +1,33 @@
+<html>
+<head>
+<title> prueba   </title>
+<body>
+
+
+<h1>Encabezado uno </h1>
+
+<h6>Encabezado seis </h6>
+
+<span> modifiquen algo</span>
+<p> Texto en un parrafo</p>
+<br/>
+
+
+<ul type='square'>
+<li>deportes 
+          <ol>
+               <li>panbol </li>
+               <li>basquet </li>
+          </ol>
+     </li>
+<li> cultura </li>
+<li> cocina </li>
+<li> tv </li>
+</ul>
+
+
+
+</body>
+
+</head>
+</html>

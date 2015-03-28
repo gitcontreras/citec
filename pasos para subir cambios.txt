@@ -1,0 +1,12 @@
+https://github.com/gitcontreras/citec.git
+
+
+para agregar un archivo seguir los siguientes pasos:
+
+git add -A
+git commit -am 'un mensaje'
+git pull  //segun yo si alguien ha echo cambios antes que tu,
+          //haces pull antes del push, en caso de que no,
+          // solo haces el push, el mismo github te dice
+          //cuando ocupas hacer pull primero
+git push  
