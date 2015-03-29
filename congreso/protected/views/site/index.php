@@ -6,7 +6,12 @@
       <div class="span4">
       
       <div class="info-img">
+
+      
+
         <img src="themes/img/calendar.png" ></div>
+
+
         <h4>¿Cuándo?</h4>
         <p><?php echo $evento->fecha_inicio; ?>
         </p>
@@ -14,13 +19,21 @@
       <div class="span4">
         <div class="info-img"><img src="themes/img/where.png" ></div>
         <h4>¿Dónde?</h4>
-         <p><?php echo $evento->lugar; ?></p>
+
+        <p><?php echo $evento->lugar; ?></p>
+
+        <a href="https://www.google.com.mx/maps/place/Tecnologico+de+celaya+Campus+2/@20.5412342,-100.8118068,17z/data=!4m2!3m1!1s0x0000000000000000:0x655a93bfa763b7ce" target="_blank">¿Cómo llegar?</a>
+        <br>
+        <a href="mailto:lince@itc.mx">Contacto: lince@itc.mx</a>
+        
+
       </div>
-      <a href="https://www.facebook.com/events/1420970331536992/">
+      <a href="https://www.facebook.com/events/1420970331536992/" target="_blank">
       <div class="span4">
         <div class="info-img"><img src="themes/img/facebook.png"></div>
         <h4>Redes Sociales</h4>
          <p>Visítanos para conocer los más recientes aconteceres del evento.</p>
+          <a href="https://www.facebook.com/itcelayaOficial?fref=ts" target="_blank">Pagina Oficial del Instituto Tecnologico de Celaya</a>
       </div>
       </a>
     </div>
