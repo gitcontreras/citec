@@ -165,7 +165,7 @@
     <li class="span4">
       <div class="thumbnail">
         <div class="blockDtl">
-        <a href="#" ><img src="themes/img/img-11.png" alt=""></a>
+        <a href="#" ><img src="themes/img/presenter1.png" alt=""></a>
                 <h4><?php echo $value->nombres; ?></h4>
                 <h5><?php echo $value->apellidos; ?></h5>
                 <p><?php echo $value->email; ?></p>
