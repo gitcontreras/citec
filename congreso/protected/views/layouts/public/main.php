@@ -15,7 +15,7 @@
 <body>
   <div id="headerSection">
   <div class="container">
-  <div class="span3 logo"><a href="#"><img src="themes/img/super_logo2.png" alt="" /></a></div>
+  <div class="span3 logo"><a ><img src="themes/img/super_logo2.png" alt="" /></a></div>
     
     <div class="navbar">
     
@@ -52,7 +52,7 @@
 <div id="carouselSection" class="cntr"> 
       <div class="carousel-inner">
         <div class="item active">
-          <a class="cntr" href="#"><img src="themes/img/citec_logo.png" alt=""></a>
+          <a class="cntr" ><img src="themes/img/citec_logo.png" alt=""></a>
         </div>
       </div>   
 </div>

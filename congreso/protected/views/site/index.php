@@ -47,42 +47,47 @@
 </div>
 </div>
 
-<!-- Our Portfolio======================================== -->
-<div id="portfolioSection">
-<div class="span6"><h1 class="cntr">Especificaciones</h1>
-<p>En esta sección ecnontrarás todo lo que necesitas saber acerca del evento. Haz clic sobre la opción que desees ver en el menú de abajo.</p></div>
-<div class="container"> 
-  <ul class="nav nav-pills">
-  <li class="active"><a href="#all" data-toggle="tab">COSTOS</a></li>
-    <li><a href="#web" data-toggle="tab">CALENDARIO</a></li>
-    <li><a href="#mobile" data-toggle="tab">CONVOCATORIA</a></li>
-    <li><a href="#photo" data-toggle="tab">MÁS INFORMACIÓN</a></li>
+<!-- Our Portfolio======================================== --> <div
+id="portfolioSection"> <div class="span6"><h1
+class="cntr">Especificaciones</h1> <p>En esta sección ecnontrarás todo lo que
+necesitas saber acerca del evento. Haz clic sobre la opción que desees ver en
+el menú de abajo.</p></div> <div class="container">    <ul class="nav nav-
+pills">   <li class="active"><a href="#Costo" data-toggle="tab">COSTOS</a></li>
+<li><a href="#Calendario" data-toggle="tab">CALENDARIO</a></li>     <li><a
+href="#ConvocatoriaPdf" data-toggle="tab">CONVOCATORIA</a></li>     <li><a
+href="#Info" data-toggle="tab">MÁS INFORMACIÓN</a></li>
     
   </ul>
 <div class="clr"></div>
 <div class="tabbable tabs">
 <div class="tab-content label-primary">
 
-  <div class="tab-pane active" id="all">
+  <div class="tab-pane active" id="Costo">
   <p><?php echo $evento->costo; ?></p>  
   </div>
   
-  <div class="tab-pane" id="web">
-  <p><?php echo $evento->fecha_inicio; ?></p>    
+  <div class="tab-pane" id="Calendario">
+  Fecha inicio
+  <p><?php echo $evento->fecha_inicio; ?></p>
+  Fecha fin
+  <p><?php echo $evento->fecha_fin; ?></p>
   </div>
   
-  <div class="tab-pane" id="mobile">
-  <?php echo $evento->convocatoria; ?>
+  <div class="tab-pane" id="ConvocatoriaPdf">
+    <a href="pdfs/<?php echo $evento->convocatoria; ?>" download="Convocatoria">
+    Descargar convocatoria
+    </a>
+  
   </div>
   
-  <div class="tab-pane" id="photo">
+  <div class="tab-pane" id="Info">
   <p><?php echo $evento->mas_informacion; ?></p>  
   </div>
   
   
   
   
-    <a href="#" class="btn btn-large btn-primary disabled">SHOW MORE</a>
+    <!-- <a href="#" class="btn btn-large btn-primary disabled">SHOW MORE</a> -->
 
   
   
@@ -109,7 +114,8 @@
     <h1>Lineamientos</h1>
     <p>En esete documento encontrará la especificación de lineamientos requeridos para la publicación de artículos</p>
         
-        <a href="#" class="btn btn-large btn-primary">Ver Documento</a>
+        <a  href="pdfs/<?php echo $evento->convocatoria; ?>" download="Lineamiento" class="btn btn-large btn-primary">Ver Documento</a>
+       
     </div>
         
         </div>
@@ -134,7 +140,7 @@
     <h1>Formato</h1>
     <p>Conozca y descargue el formato a utilizar para el artículo final.</p>
         
-        <a href="#" class="btn btn-large btn-primary">Ver Documento</a>
+        <a  href="pdfs/<?php echo $evento->convocatoria; ?>" download="Convocatoria" class="btn btn-large btn-primary">Ver Documento</a>
     </div>
         
         </div>
@@ -165,13 +171,13 @@
     <li class="span4">
       <div class="thumbnail">
         <div class="blockDtl">
-        <a href="#" ><img src="themes/img/presenter1.png" alt=""></a>
-                <h4><?php echo $value->nombres; ?></h4>
-                <h5><?php echo $value->apellidos; ?></h5>
-                <p><?php echo $value->email; ?></p>
-                <a class="facebook" href="#"></a>
+        <a href="#" ><img src="themes/img/presenter1.png" alt="themes/img/presenter2.png"></a>
+                <h3><?php echo $value->nombres; ?></h3>
+                <h4><?php echo $value->apellidos; ?></h4>
+                <h5><?php echo $value->email; ?></h5>
+                <!-- <a class="facebook" href="#"></a>
                     <a class="twitter" href="#"></a>
-                    <a class="pin" href="#"></a>
+                    <a class="pin" href="#"></a> -->
         </div>
       </div>
     </li>
@@ -237,6 +243,10 @@
             </div>
 
           </div>
+
+          <div class="control-group">
+          
+            
           
          
           <button type="submit" class="btn btn-large btn-primary disabled">Enviar</button>
@@ -254,10 +264,10 @@
   
        
                 <div class=" span4 socialicon">
-                    <a class="facebook" href="http://www.facebook.com/xtendify"></a>
-                    <a class="twitter" href="http://www.twitter.com/xtendify"></a>
-                    <a class="html5" href="#"></a>
-                    <a class="icon2" href="#"></a>
+                    <a class="facebook" href="https://www.facebook.com/events/1420970331536992/" target="_blank"></a>
+                    <!-- <a class="twitter" href="http://www.twitter.com/xtendify"></a> -->
+                    <!-- <a class="html5" href="#"></a> -->
+                    <!-- <a class="icon2" href="#"></a> -->
                 </div>
                 
         
@@ -272,5 +282,5 @@
 <!-- Wrapper end -->
 
 
-<a href="#" class="go-top" ><i class="icon-arrow-up"></i></a>
+<a href="#top" class="go-top"><i class="icon-arrow-up"></i></a>
 
