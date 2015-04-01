@@ -140,7 +140,7 @@ href="#Info" data-toggle="tab">MÁS INFORMACIÓN</a></li>
     <h1>Formato</h1>
     <p>Conozca y descargue el formato a utilizar para el artículo final.</p>
         
-        <a  href="pdfs/<?php echo $evento->convocatoria; ?>" download="Convocatoria" class="btn btn-large btn-primary">Ver Documento</a>
+        <a  href="pdfs/<?php echo $evento->convocatoria; ?>" download="Formato" class="btn btn-large btn-primary">Ver Documento</a>
     </div>
         
         </div>
@@ -171,7 +171,7 @@ href="#Info" data-toggle="tab">MÁS INFORMACIÓN</a></li>
     <li class="span4">
       <div class="thumbnail">
         <div class="blockDtl">
-        <a href="#" ><img src="themes/img/presenter1.png" alt="themes/img/presenter2.png"></a>
+        <img src="themes/img/presenter1.png" alt="themes/img/presenter2.png">
                 <h3><?php echo $value->nombres; ?></h3>
                 <h4><?php echo $value->apellidos; ?></h4>
                 <h5><?php echo $value->email; ?></h5>
@@ -220,7 +220,7 @@ href="#Info" data-toggle="tab">MÁS INFORMACIÓN</a></li>
           
           <div class="controls">
             <?php echo $form->labelEx($model,'nombres'); ?>
-            <?php echo $form->textField($model,'nombres',array('size'=>60,'maxlength'=>250,'class'=>'form-control','placeholder'=>'Nombre')); ?>
+            <?php echo $form->textField($model,'nombres',array('size'=>60,'maxlength'=>250,'class'=>'form-control','placeholder'=>'Nombre','required'=>'true')); ?>
             <?php echo $form->error($model,'nombres'); ?>
            
           </div>
@@ -229,7 +229,7 @@ href="#Info" data-toggle="tab">MÁS INFORMACIÓN</a></li>
           
             <div class="controls">
               <?php echo $form->labelEx($model,'apellidos'); ?>
-              <?php echo $form->textField($model,'apellidos',array('size'=>60,'maxlength'=>250,'class'=>'form-control','placeholder'=>'Apellidos')); ?>
+              <?php echo $form->textField($model,'apellidos',array('size'=>60,'maxlength'=>250,'class'=>'form-control','placeholder'=>'Apellidos','required'=>'true')); ?>
               <?php echo $form->error($model,'apellidos'); ?>
              
             </div>
@@ -238,7 +238,7 @@ href="#Info" data-toggle="tab">MÁS INFORMACIÓN</a></li>
           
             <div class="controls">
               <?php echo $form->labelEx($model,'email'); ?>
-              <?php echo $form->textField($model,'email',array('size'=>60,'maxlength'=>250,'class'=>'form-control','placeholder'=>'Email')); ?>
+              <?php echo $form->emailField($model,'email',array('size'=>60,'maxlength'=>250,'class'=>'form-control','placeholder'=>'Email','required'=>'true')); ?>
               <?php echo $form->error($model,'email'); ?>
             </div>
 
