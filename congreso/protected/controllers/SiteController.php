@@ -36,6 +36,17 @@ class SiteController extends Controller
 			
 		));
 	}
+	public function actionAccesoUsuario(){
+		$this->layout='//layouts/public/column1';
+
+		$this->menu=array(
+			//array('label'=>'Inicio', 'url'=>"ddddddd"),
+		);
+
+		$this->render('accesoUsuario',array(
+			
+		));
+	}
 	public function actionIndex()
 	{
 		// renders the view file 'protected/views/site/index.php'
@@ -51,12 +62,13 @@ class SiteController extends Controller
 			if($model->save())
 				$this->redirect(array('usuarioRegistrado','id'=>$model->id_participante));
 		}
-
+		$url = Yii::app()->createUrl('site/accesoUsuario');
 		$this->menu=array(
 			array('label'=>'Información', 'url'=>"#ourServices"),
 			array('label'=>'Especificaciones', 'url'=>"#portfolioSection"),
 			array('label'=>'Ponentes', 'url'=>"#meetourteamSection"),
 			array('label'=>'Registro', 'url'=>"#contactSection"),
+			array('label'=>'Acceso', "url"=>$url),
 			
 		);
 

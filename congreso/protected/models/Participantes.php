@@ -8,6 +8,7 @@
  * @property string $nombres
  * @property string $apellidos
  * @property string $email
+ * @property string $password
  *
  * The followings are the available model relations:
  * @property Articulos[] $articuloses
@@ -33,10 +34,12 @@ class Participantes extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
+			array('password', 'required'),
 			array('nombres, apellidos, email', 'length', 'max'=>250),
+			array('password', 'length', 'max'=>30),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('id_participante, nombres, apellidos, email', 'safe', 'on'=>'search'),
+			array('id_participante, nombres, apellidos, email, password', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -65,6 +68,7 @@ class Participantes extends CActiveRecord
 			'nombres' => 'Nombres',
 			'apellidos' => 'Apellidos',
 			'email' => 'Email',
+			'password' => 'Password',
 		);
 	}
 
@@ -90,6 +94,7 @@ class Participantes extends CActiveRecord
 		$criteria->compare('nombres',$this->nombres,true);
 		$criteria->compare('apellidos',$this->apellidos,true);
 		$criteria->compare('email',$this->email,true);
+		$criteria->compare('password',$this->password,true);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,

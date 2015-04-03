@@ -1,7 +1,7 @@
 
 
 <div id="portfolioSection">
-	<div class="span6"><h1 class="cntr">Fesdfgdofhgdoi</h1>
+	<div class="span6"><h1 class="cntr">Gracias por registrarte</h1>
 		<p>ensaje para el usuario registrado</p>
 	</div>
 	<div class="container"> 

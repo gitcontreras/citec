@@ -21,24 +21,30 @@
 
 	<div class="form-group">
 		<?php echo $form->labelEx($model,'nombres'); ?>
-		<?php echo $form->textField($model,'nombres',array('size'=>60,'maxlength'=>250,'class'=>'form-control')); ?>
+		<?php echo $form->textField($model,'nombres',array('size'=>60,'maxlength'=>250,'class'=> 'form-control')); ?>
 		<?php echo $form->error($model,'nombres'); ?>
 	</div>
 
 	<div class="form-group">
 		<?php echo $form->labelEx($model,'apellidos'); ?>
-		<?php echo $form->textField($model,'apellidos',array('size'=>60,'maxlength'=>250,'class'=>'form-control')); ?>
+		<?php echo $form->textField($model,'apellidos',array('size'=>60,'maxlength'=>250,'class'=> 'form-control')); ?>
 		<?php echo $form->error($model,'apellidos'); ?>
 	</div>
 
 	<div class="form-group">
 		<?php echo $form->labelEx($model,'email'); ?>
-		<?php echo $form->textField($model,'email',array('size'=>60,'maxlength'=>250,'class'=>'form-control')); ?>
+		<?php echo $form->textField($model,'email',array('size'=>60,'maxlength'=>250,'class'=> 'form-control')); ?>
 		<?php echo $form->error($model,'email'); ?>
 	</div>
 
 	<div class="form-group">
-		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save', array('class'=>'btn btn-primary')); ?>
+		<?php echo $form->labelEx($model,'password'); ?>
+		<?php echo $form->passwordField($model,'password',array('size'=>30,'maxlength'=>30,'class'=> 'form-control')); ?>
+		<?php echo $form->error($model,'password'); ?>
+	</div>
+
+	<div class="form-group">
+		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save',array ('class'=>'btn btn-primary')); ?>
 	</div>
 
 <?php $this->endWidget(); ?>

@@ -175,6 +175,7 @@ href="#Info" data-toggle="tab">MÁS INFORMACIÓN</a></li>
                 <h3><?php echo $value->nombres; ?></h3>
                 <h4><?php echo $value->apellidos; ?></h4>
                 <h5><?php echo $value->email; ?></h5>
+
                 <!-- <a class="facebook" href="#"></a>
                     <a class="twitter" href="#"></a>
                     <a class="pin" href="#"></a> -->
@@ -242,6 +243,15 @@ href="#Info" data-toggle="tab">MÁS INFORMACIÓN</a></li>
               <?php echo $form->error($model,'email'); ?>
             </div>
 
+          </div>
+          <div class="control-group">
+          
+            <div class="controls">
+              <?php echo $form->labelEx($model,'password'); ?>
+              <?php echo $form->textField($model,'password',array('size'=>60,'maxlength'=>250,'class'=>'form-control','placeholder'=>'Contraseña','required'=>'true')); ?>
+              <?php echo $form->error($model,'password'); ?>
+             
+            </div>
           </div>
 
           <div class="control-group">

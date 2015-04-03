@@ -62,7 +62,6 @@ class ParticipantesController extends Controller
 	 */
 	public function actionCreate()
 	{
-		$this->layout='//layouts/public/column1';
 		$model=new Participantes;
 
 		// Uncomment the following line if AJAX validation is needed
