@@ -68,9 +68,12 @@ class SiteController extends Controller
 			array('label'=>'Especificaciones', 'url'=>"#portfolioSection"),
 			array('label'=>'Ponentes', 'url'=>"#meetourteamSection"),
 			array('label'=>'Registro', 'url'=>"#contactSection"),
-			array('label'=>'Acceso', "url"=>$url),
+			array('label'=>'Acceso', "url"=>'#Acceso'),
+			
+
 			
 		);
+
 
               $participantes = Participantes::model()->findAll();
           /*
@@ -172,4 +175,5 @@ class SiteController extends Controller
 		Yii::app()->user->logout();
 		$this->redirect(Yii::app()->homeUrl);
 	}
+	
 }

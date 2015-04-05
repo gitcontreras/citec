@@ -871,3 +871,346 @@ Stack trace:
 #10 {main}
 REQUEST_URI=/citec/congreso/index.php?r=site/index
 ---
+2015/04/03 23:58:38 [error] [exception.CException] exception 'CException' with message 'CActiveForm and its behaviors do not have a method or closure named "password".' in C:\xampp\htdocs\citec\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\xampp\htdocs\citec\congreso\protected\views\site\index.php(252): CComponent->__call('password', Array)
+#1 C:\xampp\htdocs\citec\congreso\protected\views\site\index.php(252): CActiveForm->password(Object(Participantes), 'password', Array)
+#2 C:\xampp\htdocs\citec\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\citec\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#4 C:\xampp\htdocs\citec\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#5 C:\xampp\htdocs\citec\framework\web\CController.php(782): CController->renderPartial('index', Array, true)
+#6 C:\xampp\htdocs\citec\congreso\protected\controllers\SiteController.php(92): CController->render('index', Array)
+#7 C:\xampp\htdocs\citec\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#8 C:\xampp\htdocs\citec\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\xampp\htdocs\citec\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\xampp\htdocs\citec\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\xampp\htdocs\citec\framework\web\CWebApplication.php(282): CController->run('index')
+#12 C:\xampp\htdocs\citec\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#13 C:\xampp\htdocs\citec\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\citec\congreso\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/citec/congreso/index.php?r=site/index
+---
+2015/04/04 01:01:18 [error] [exception.CException] exception 'CException' with message 'Alias "ext.components.MyClass" is invalid. Make sure it points to an existing PHP file and the file is readable.' in C:\xampp\htdocs\citec\framework\YiiBase.php:323
+Stack trace:
+#0 C:\xampp\htdocs\citec\framework\YiiBase.php(196): YiiBase::import('ext.components....', true)
+#1 C:\xampp\htdocs\citec\framework\base\CModule.php(393): YiiBase::createComponent(Array)
+#2 C:\xampp\htdocs\citec\framework\base\CModule.php(103): CModule->getComponent('myClass')
+#3 C:\xampp\htdocs\citec\congreso\protected\controllers\SiteController.php(76): CModule->__get('myClass')
+#4 C:\xampp\htdocs\citec\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#5 C:\xampp\htdocs\citec\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\citec\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#7 C:\xampp\htdocs\citec\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\citec\framework\web\CWebApplication.php(282): CController->run('index')
+#9 C:\xampp\htdocs\citec\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#10 C:\xampp\htdocs\citec\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\citec\congreso\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/citec/congreso/index.php?r=site/index
+---
+2015/04/04 01:02:22 [error] [exception.CException] exception 'CException' with message 'Alias "ext.components.MyClass" is invalid. Make sure it points to an existing PHP file and the file is readable.' in C:\xampp\htdocs\citec\framework\YiiBase.php:323
+Stack trace:
+#0 C:\xampp\htdocs\citec\framework\YiiBase.php(196): YiiBase::import('ext.components....', true)
+#1 C:\xampp\htdocs\citec\framework\base\CModule.php(393): YiiBase::createComponent(Array)
+#2 C:\xampp\htdocs\citec\framework\base\CModule.php(103): CModule->getComponent('myClass')
+#3 C:\xampp\htdocs\citec\congreso\protected\controllers\SiteController.php(76): CModule->__get('myClass')
+#4 C:\xampp\htdocs\citec\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#5 C:\xampp\htdocs\citec\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\citec\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#7 C:\xampp\htdocs\citec\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\citec\framework\web\CWebApplication.php(282): CController->run('index')
+#9 C:\xampp\htdocs\citec\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#10 C:\xampp\htdocs\citec\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\citec\congreso\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/citec/congreso/index.php?r=site/index
+---
+2015/04/04 01:02:24 [error] [exception.CException] exception 'CException' with message 'Alias "ext.components.MyClass" is invalid. Make sure it points to an existing PHP file and the file is readable.' in C:\xampp\htdocs\citec\framework\YiiBase.php:323
+Stack trace:
+#0 C:\xampp\htdocs\citec\framework\YiiBase.php(196): YiiBase::import('ext.components....', true)
+#1 C:\xampp\htdocs\citec\framework\base\CModule.php(393): YiiBase::createComponent(Array)
+#2 C:\xampp\htdocs\citec\framework\base\CModule.php(103): CModule->getComponent('myClass')
+#3 C:\xampp\htdocs\citec\congreso\protected\controllers\SiteController.php(76): CModule->__get('myClass')
+#4 C:\xampp\htdocs\citec\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#5 C:\xampp\htdocs\citec\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\citec\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#7 C:\xampp\htdocs\citec\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\citec\framework\web\CWebApplication.php(282): CController->run('index')
+#9 C:\xampp\htdocs\citec\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#10 C:\xampp\htdocs\citec\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\citec\congreso\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/citec/congreso/index.php?r=site/index
+---
+2015/04/04 01:03:46 [error] [exception.CException] exception 'CException' with message 'Alias "ext.components.MyClass" is invalid. Make sure it points to an existing PHP file and the file is readable.' in C:\xampp\htdocs\citec\framework\YiiBase.php:323
+Stack trace:
+#0 C:\xampp\htdocs\citec\framework\YiiBase.php(196): YiiBase::import('ext.components....', true)
+#1 C:\xampp\htdocs\citec\framework\base\CModule.php(393): YiiBase::createComponent(Array)
+#2 C:\xampp\htdocs\citec\framework\base\CModule.php(103): CModule->getComponent('myClass')
+#3 C:\xampp\htdocs\citec\congreso\protected\controllers\SiteController.php(76): CModule->__get('myClass')
+#4 C:\xampp\htdocs\citec\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#5 C:\xampp\htdocs\citec\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\citec\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#7 C:\xampp\htdocs\citec\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\citec\framework\web\CWebApplication.php(282): CController->run('index')
+#9 C:\xampp\htdocs\citec\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#10 C:\xampp\htdocs\citec\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\citec\congreso\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/citec/congreso/index.php?r=site/index
+---
+2015/04/04 01:03:48 [error] [exception.CException] exception 'CException' with message 'Alias "ext.components.MyClass" is invalid. Make sure it points to an existing PHP file and the file is readable.' in C:\xampp\htdocs\citec\framework\YiiBase.php:323
+Stack trace:
+#0 C:\xampp\htdocs\citec\framework\YiiBase.php(196): YiiBase::import('ext.components....', true)
+#1 C:\xampp\htdocs\citec\framework\base\CModule.php(393): YiiBase::createComponent(Array)
+#2 C:\xampp\htdocs\citec\framework\base\CModule.php(103): CModule->getComponent('myClass')
+#3 C:\xampp\htdocs\citec\congreso\protected\controllers\SiteController.php(76): CModule->__get('myClass')
+#4 C:\xampp\htdocs\citec\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#5 C:\xampp\htdocs\citec\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\citec\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#7 C:\xampp\htdocs\citec\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\citec\framework\web\CWebApplication.php(282): CController->run('index')
+#9 C:\xampp\htdocs\citec\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#10 C:\xampp\htdocs\citec\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\citec\congreso\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/citec/congreso/index.php?r=site/index
+---
+2015/04/04 01:04:44 [error] [exception.CException] exception 'CException' with message 'Alias "ext.components.MyClass" is invalid. Make sure it points to an existing PHP file and the file is readable.' in C:\xampp\htdocs\citec\framework\YiiBase.php:323
+Stack trace:
+#0 C:\xampp\htdocs\citec\framework\YiiBase.php(196): YiiBase::import('ext.components....', true)
+#1 C:\xampp\htdocs\citec\framework\base\CModule.php(393): YiiBase::createComponent(Array)
+#2 C:\xampp\htdocs\citec\framework\base\CModule.php(103): CModule->getComponent('myClass')
+#3 C:\xampp\htdocs\citec\congreso\protected\controllers\SiteController.php(76): CModule->__get('myClass')
+#4 C:\xampp\htdocs\citec\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#5 C:\xampp\htdocs\citec\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\citec\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#7 C:\xampp\htdocs\citec\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\citec\framework\web\CWebApplication.php(282): CController->run('index')
+#9 C:\xampp\htdocs\citec\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#10 C:\xampp\htdocs\citec\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\citec\congreso\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/citec/congreso/index.php?r=site/index
+---
+2015/04/04 01:04:46 [error] [exception.CException] exception 'CException' with message 'Alias "ext.components.MyClass" is invalid. Make sure it points to an existing PHP file and the file is readable.' in C:\xampp\htdocs\citec\framework\YiiBase.php:323
+Stack trace:
+#0 C:\xampp\htdocs\citec\framework\YiiBase.php(196): YiiBase::import('ext.components....', true)
+#1 C:\xampp\htdocs\citec\framework\base\CModule.php(393): YiiBase::createComponent(Array)
+#2 C:\xampp\htdocs\citec\framework\base\CModule.php(103): CModule->getComponent('myClass')
+#3 C:\xampp\htdocs\citec\congreso\protected\controllers\SiteController.php(76): CModule->__get('myClass')
+#4 C:\xampp\htdocs\citec\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#5 C:\xampp\htdocs\citec\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\citec\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#7 C:\xampp\htdocs\citec\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\citec\framework\web\CWebApplication.php(282): CController->run('index')
+#9 C:\xampp\htdocs\citec\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#10 C:\xampp\htdocs\citec\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\citec\congreso\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/citec/congreso/index.php?r=site/index
+---
+2015/04/04 01:16:48 [error] [exception.CException] exception 'CException' with message 'Alias "ext.components.MyClass" is invalid. Make sure it points to an existing PHP file and the file is readable.' in C:\xampp\htdocs\citec\framework\YiiBase.php:323
+Stack trace:
+#0 C:\xampp\htdocs\citec\framework\YiiBase.php(196): YiiBase::import('ext.components....', true)
+#1 C:\xampp\htdocs\citec\framework\base\CModule.php(393): YiiBase::createComponent(Array)
+#2 C:\xampp\htdocs\citec\framework\base\CModule.php(103): CModule->getComponent('myClass')
+#3 C:\xampp\htdocs\citec\congreso\protected\controllers\SiteController.php(77): CModule->__get('myClass')
+#4 C:\xampp\htdocs\citec\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#5 C:\xampp\htdocs\citec\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\citec\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#7 C:\xampp\htdocs\citec\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\citec\framework\web\CWebApplication.php(282): CController->run('index')
+#9 C:\xampp\htdocs\citec\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#10 C:\xampp\htdocs\citec\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\citec\congreso\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/citec/congreso/index.php?r=site/index
+---
+2015/04/05 01:32:17 [error] [exception.CException] exception 'CException' with message 'Property "Participantes.username" is not defined.' in C:\xampp\htdocs\citec\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\citec\framework\db\ar\CActiveRecord.php(145): CComponent->__get('username')
+#1 C:\xampp\htdocs\citec\framework\web\helpers\CHtml.php(2728): CActiveRecord->__get('username')
+#2 C:\xampp\htdocs\citec\framework\web\helpers\CHtml.php(2451): CHtml::resolveValue(Object(Participantes), 'username')
+#3 C:\xampp\htdocs\citec\framework\web\helpers\CHtml.php(1533): CHtml::activeInputField('text', Object(Participantes), 'username', Array)
+#4 C:\xampp\htdocs\citec\framework\web\widgets\CActiveForm.php(792): CHtml::activeTextField(Object(Participantes), 'username', Array)
+#5 C:\xampp\htdocs\citec\congreso\protected\views\site\index.php(309): CActiveForm->textField(Object(Participantes), 'username')
+#6 C:\xampp\htdocs\citec\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\citec\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#8 C:\xampp\htdocs\citec\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#9 C:\xampp\htdocs\citec\framework\web\CController.php(782): CController->renderPartial('index', Array, true)
+#10 C:\xampp\htdocs\citec\congreso\protected\controllers\SiteController.php(95): CController->render('index', Array)
+#11 C:\xampp\htdocs\citec\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#12 C:\xampp\htdocs\citec\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#13 C:\xampp\htdocs\citec\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#14 C:\xampp\htdocs\citec\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 C:\xampp\htdocs\citec\framework\web\CWebApplication.php(282): CController->run('index')
+#16 C:\xampp\htdocs\citec\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#17 C:\xampp\htdocs\citec\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#18 C:\xampp\htdocs\citec\congreso\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/citec/congreso/index.php?r=site/index
+---
+2015/04/05 01:37:05 [error] [exception.CException] exception 'CException' with message 'Property "Participantes.username" is not defined.' in C:\xampp\htdocs\citec\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\citec\framework\db\ar\CActiveRecord.php(145): CComponent->__get('username')
+#1 C:\xampp\htdocs\citec\framework\web\helpers\CHtml.php(2728): CActiveRecord->__get('username')
+#2 C:\xampp\htdocs\citec\framework\web\helpers\CHtml.php(2451): CHtml::resolveValue(Object(Participantes), 'username')
+#3 C:\xampp\htdocs\citec\framework\web\helpers\CHtml.php(1533): CHtml::activeInputField('text', Object(Participantes), 'username', Array)
+#4 C:\xampp\htdocs\citec\framework\web\widgets\CActiveForm.php(792): CHtml::activeTextField(Object(Participantes), 'username', Array)
+#5 C:\xampp\htdocs\citec\congreso\protected\views\site\index.php(304): CActiveForm->textField(Object(Participantes), 'username')
+#6 C:\xampp\htdocs\citec\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\citec\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#8 C:\xampp\htdocs\citec\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#9 C:\xampp\htdocs\citec\framework\web\CController.php(782): CController->renderPartial('index', Array, true)
+#10 C:\xampp\htdocs\citec\congreso\protected\controllers\SiteController.php(95): CController->render('index', Array)
+#11 C:\xampp\htdocs\citec\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#12 C:\xampp\htdocs\citec\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#13 C:\xampp\htdocs\citec\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#14 C:\xampp\htdocs\citec\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 C:\xampp\htdocs\citec\framework\web\CWebApplication.php(282): CController->run('index')
+#16 C:\xampp\htdocs\citec\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#17 C:\xampp\htdocs\citec\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#18 C:\xampp\htdocs\citec\congreso\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/citec/congreso/index.php?r=site/index
+---
+2015/04/05 01:37:24 [error] [exception.CException] exception 'CException' with message 'Property "Participantes.rememberMe" is not defined.' in C:\xampp\htdocs\citec\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\citec\framework\db\ar\CActiveRecord.php(145): CComponent->__get('rememberMe')
+#1 C:\xampp\htdocs\citec\framework\web\helpers\CHtml.php(2728): CActiveRecord->__get('rememberMe')
+#2 C:\xampp\htdocs\citec\framework\web\helpers\CHtml.php(1922): CHtml::resolveValue(Object(Participantes), 'rememberMe')
+#3 C:\xampp\htdocs\citec\framework\web\widgets\CActiveForm.php(898): CHtml::activeCheckBox(Object(Participantes), 'rememberMe', Array)
+#4 C:\xampp\htdocs\citec\congreso\protected\views\site\index.php(314): CActiveForm->checkBox(Object(Participantes), 'rememberMe')
+#5 C:\xampp\htdocs\citec\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\citec\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#7 C:\xampp\htdocs\citec\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#8 C:\xampp\htdocs\citec\framework\web\CController.php(782): CController->renderPartial('index', Array, true)
+#9 C:\xampp\htdocs\citec\congreso\protected\controllers\SiteController.php(95): CController->render('index', Array)
+#10 C:\xampp\htdocs\citec\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#11 C:\xampp\htdocs\citec\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#12 C:\xampp\htdocs\citec\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#13 C:\xampp\htdocs\citec\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 C:\xampp\htdocs\citec\framework\web\CWebApplication.php(282): CController->run('index')
+#15 C:\xampp\htdocs\citec\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#16 C:\xampp\htdocs\citec\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#17 C:\xampp\htdocs\citec\congreso\index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/citec/congreso/index.php?r=site/index
+---
+2015/04/05 01:57:50 [error] [exception.CException] exception 'CException' with message 'Property "LoginForm.email" is not defined.' in C:\xampp\htdocs\citec\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\citec\framework\web\helpers\CHtml.php(2728): CComponent->__get('email')
+#1 C:\xampp\htdocs\citec\framework\web\helpers\CHtml.php(2451): CHtml::resolveValue(Object(LoginForm), 'email')
+#2 C:\xampp\htdocs\citec\framework\web\helpers\CHtml.php(1593): CHtml::activeInputField('email', Object(LoginForm), 'email', Array)
+#3 C:\xampp\htdocs\citec\framework\web\widgets\CActiveForm.php(632): CHtml::activeEmailField(Object(LoginForm), 'email', Array)
+#4 C:\xampp\htdocs\citec\congreso\protected\views\site\login.php(27): CActiveForm->emailField(Object(LoginForm), 'email', Array)
+#5 C:\xampp\htdocs\citec\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\citec\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#7 C:\xampp\htdocs\citec\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#8 C:\xampp\htdocs\citec\framework\web\CController.php(782): CController->renderPartial('login', Array, true)
+#9 C:\xampp\htdocs\citec\congreso\protected\controllers\SiteController.php(167): CController->render('login', Array)
+#10 C:\xampp\htdocs\citec\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#11 C:\xampp\htdocs\citec\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#12 C:\xampp\htdocs\citec\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#13 C:\xampp\htdocs\citec\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 C:\xampp\htdocs\citec\framework\web\CWebApplication.php(282): CController->run('login')
+#15 C:\xampp\htdocs\citec\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#16 C:\xampp\htdocs\citec\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#17 C:\xampp\htdocs\citec\congreso\index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/citec/congreso/index.php?r=site/login
+---
+2015/04/05 02:00:02 [error] [exception.CException] exception 'CException' with message 'Property "LoginForm.email" is not defined.' in C:\xampp\htdocs\citec\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\citec\framework\web\helpers\CHtml.php(2728): CComponent->__get('email')
+#1 C:\xampp\htdocs\citec\framework\web\helpers\CHtml.php(2451): CHtml::resolveValue(Object(LoginForm), 'email')
+#2 C:\xampp\htdocs\citec\framework\web\helpers\CHtml.php(1593): CHtml::activeInputField('email', Object(LoginForm), 'email', Array)
+#3 C:\xampp\htdocs\citec\framework\web\widgets\CActiveForm.php(632): CHtml::activeEmailField(Object(LoginForm), 'email', Array)
+#4 C:\xampp\htdocs\citec\congreso\protected\views\site\login.php(27): CActiveForm->emailField(Object(LoginForm), 'email', Array)
+#5 C:\xampp\htdocs\citec\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\citec\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#7 C:\xampp\htdocs\citec\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#8 C:\xampp\htdocs\citec\framework\web\CController.php(782): CController->renderPartial('login', Array, true)
+#9 C:\xampp\htdocs\citec\congreso\protected\controllers\SiteController.php(167): CController->render('login', Array)
+#10 C:\xampp\htdocs\citec\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#11 C:\xampp\htdocs\citec\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#12 C:\xampp\htdocs\citec\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#13 C:\xampp\htdocs\citec\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 C:\xampp\htdocs\citec\framework\web\CWebApplication.php(282): CController->run('login')
+#15 C:\xampp\htdocs\citec\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#16 C:\xampp\htdocs\citec\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#17 C:\xampp\htdocs\citec\congreso\index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/citec/congreso/index.php?r=site/login
+HTTP_REFERER=http://localhost/citec/congreso/index.php?r=site/login
+---
+2015/04/05 02:00:56 [error] [exception.CException] exception 'CException' with message 'Property "LoginForm.email" is not defined.' in C:\xampp\htdocs\citec\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\citec\framework\web\helpers\CHtml.php(2728): CComponent->__get('email')
+#1 C:\xampp\htdocs\citec\framework\web\helpers\CHtml.php(2451): CHtml::resolveValue(Object(LoginForm), 'email')
+#2 C:\xampp\htdocs\citec\framework\web\helpers\CHtml.php(1593): CHtml::activeInputField('email', Object(LoginForm), 'email', Array)
+#3 C:\xampp\htdocs\citec\framework\web\widgets\CActiveForm.php(632): CHtml::activeEmailField(Object(LoginForm), 'email', Array)
+#4 C:\xampp\htdocs\citec\congreso\protected\views\site\login.php(27): CActiveForm->emailField(Object(LoginForm), 'email', Array)
+#5 C:\xampp\htdocs\citec\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\citec\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#7 C:\xampp\htdocs\citec\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#8 C:\xampp\htdocs\citec\framework\web\CController.php(782): CController->renderPartial('login', Array, true)
+#9 C:\xampp\htdocs\citec\congreso\protected\controllers\SiteController.php(167): CController->render('login', Array)
+#10 C:\xampp\htdocs\citec\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#11 C:\xampp\htdocs\citec\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#12 C:\xampp\htdocs\citec\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#13 C:\xampp\htdocs\citec\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 C:\xampp\htdocs\citec\framework\web\CWebApplication.php(282): CController->run('login')
+#15 C:\xampp\htdocs\citec\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#16 C:\xampp\htdocs\citec\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#17 C:\xampp\htdocs\citec\congreso\index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/citec/congreso/index.php?r=site/login
+---
+2015/04/05 02:00:57 [error] [exception.CException] exception 'CException' with message 'Property "LoginForm.email" is not defined.' in C:\xampp\htdocs\citec\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\citec\framework\web\helpers\CHtml.php(2728): CComponent->__get('email')
+#1 C:\xampp\htdocs\citec\framework\web\helpers\CHtml.php(2451): CHtml::resolveValue(Object(LoginForm), 'email')
+#2 C:\xampp\htdocs\citec\framework\web\helpers\CHtml.php(1593): CHtml::activeInputField('email', Object(LoginForm), 'email', Array)
+#3 C:\xampp\htdocs\citec\framework\web\widgets\CActiveForm.php(632): CHtml::activeEmailField(Object(LoginForm), 'email', Array)
+#4 C:\xampp\htdocs\citec\congreso\protected\views\site\login.php(27): CActiveForm->emailField(Object(LoginForm), 'email', Array)
+#5 C:\xampp\htdocs\citec\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\citec\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#7 C:\xampp\htdocs\citec\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#8 C:\xampp\htdocs\citec\framework\web\CController.php(782): CController->renderPartial('login', Array, true)
+#9 C:\xampp\htdocs\citec\congreso\protected\controllers\SiteController.php(167): CController->render('login', Array)
+#10 C:\xampp\htdocs\citec\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#11 C:\xampp\htdocs\citec\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#12 C:\xampp\htdocs\citec\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#13 C:\xampp\htdocs\citec\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 C:\xampp\htdocs\citec\framework\web\CWebApplication.php(282): CController->run('login')
+#15 C:\xampp\htdocs\citec\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#16 C:\xampp\htdocs\citec\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#17 C:\xampp\htdocs\citec\congreso\index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/citec/congreso/index.php?r=site/login
+---
+2015/04/05 02:01:00 [error] [exception.CException] exception 'CException' with message 'Property "LoginForm.email" is not defined.' in C:\xampp\htdocs\citec\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\citec\framework\web\helpers\CHtml.php(2728): CComponent->__get('email')
+#1 C:\xampp\htdocs\citec\framework\web\helpers\CHtml.php(2451): CHtml::resolveValue(Object(LoginForm), 'email')
+#2 C:\xampp\htdocs\citec\framework\web\helpers\CHtml.php(1593): CHtml::activeInputField('email', Object(LoginForm), 'email', Array)
+#3 C:\xampp\htdocs\citec\framework\web\widgets\CActiveForm.php(632): CHtml::activeEmailField(Object(LoginForm), 'email', Array)
+#4 C:\xampp\htdocs\citec\congreso\protected\views\site\login.php(27): CActiveForm->emailField(Object(LoginForm), 'email', Array)
+#5 C:\xampp\htdocs\citec\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\citec\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#7 C:\xampp\htdocs\citec\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#8 C:\xampp\htdocs\citec\framework\web\CController.php(782): CController->renderPartial('login', Array, true)
+#9 C:\xampp\htdocs\citec\congreso\protected\controllers\SiteController.php(167): CController->render('login', Array)
+#10 C:\xampp\htdocs\citec\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#11 C:\xampp\htdocs\citec\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#12 C:\xampp\htdocs\citec\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#13 C:\xampp\htdocs\citec\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 C:\xampp\htdocs\citec\framework\web\CWebApplication.php(282): CController->run('login')
+#15 C:\xampp\htdocs\citec\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#16 C:\xampp\htdocs\citec\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#17 C:\xampp\htdocs\citec\congreso\index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/citec/congreso/index.php?r=site/login
+---
