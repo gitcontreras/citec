@@ -19,6 +19,24 @@
   }
 </style>
 
+<script>
+
+  $(document).ready(function()
+  {
+      $('#ourServices').attr('style','visible:fale;');
+
+      var menuAcceso = $('a[href="#Acceso"]');
+      menuAcceso.attr('id','menuAcceso');
+      menuAcceso.attr('data-toggle','modal');
+      menuAcceso.attr('data-target','#exampleModal');
+      menuAcceso.attr('data-whatever','@getbootstrap');
+      menuAcceso.attr('href','');
+
+      
+  });
+
+</script>
+
        
 
 <!-- Informacion -->
@@ -184,40 +202,40 @@
 <div id="contactSection">
   <div class="span6">
     <h1 class="cntr">Registro</h1>
-    <p>Llene el siguiente formulario para registrarse.</p></div>
+    <p>Llene el siguiente formulario para registrarse.</p>
+  </div>
     
-      <div class="container"> 
-        <div class="row"> 
-          <div class="span8">
-            <?php $form=$this->beginWidget(
-                                  'CActiveForm', array(
-                                        'id'=>'participantes-form',
-                                          'enableAjaxValidation'=>false,
-                              )); ?>
-          <fieldset>
-            <div class="control-group">
-          
-              <div class="controls">
-                <?php echo $form->labelEx($model,'nombres'); ?>
-                <?php echo $form->textField($model,'nombres',array('size'=>60,'maxlength'=>250,'class'=>'form-control','placeholder'=>'Nombre','required'=>'true')); ?>
-                <?php echo $form->error($model,'nombres'); ?>
-              </div>
+  <div class="container"> 
+    <div class="row"> 
+      <div class="span8">
+        <?php $form=$this->beginWidget(
+                                      'CActiveForm', array(
+                                                          'id'=>'participantes-form',
+                                                          'enableAjaxValidation'=>false,
+                                                          )); ?>
+        
+          <div class="control-group">
+            <div class="controls">
+              <?php echo $form->labelEx($model,'nombres'); ?>
+              <?php echo $form->textField($model,'nombres',array('size'=>60,'maxlength'=>250,'class'=>'form-control','placeholder'=>'Nombre','required'=>'true')); ?>
+              <?php echo $form->error($model,'nombres'); ?>
             </div>
-            <div class="control-group">
-              <div class="controls">
-                <?php echo $form->labelEx($model,'apellidos'); ?>
-                <?php echo $form->textField($model,'apellidos',array('size'=>60,'maxlength'=>250,'class'=>'form-control','placeholder'=>'Apellidos','required'=>'true')); ?>
-                <?php echo $form->error($model,'apellidos'); ?>
-              </div>
+          </div>
+          <div class="control-group">
+            <div class="controls">
+              <?php echo $form->labelEx($model,'apellidos'); ?>
+              <?php echo $form->textField($model,'apellidos',array('size'=>60,'maxlength'=>250,'class'=>'form-control','placeholder'=>'Apellidos','required'=>'true')); ?>
+              <?php echo $form->error($model,'apellidos'); ?>
             </div>
+          </div>
             
-            <div class="control-group">
-              <div class="controls">
-                <?php echo $form->labelEx($model,'email'); ?>
-                <?php echo $form->emailField($model,'email',array('size'=>60,'maxlength'=>250,'class'=>'form-control','placeholder'=>'Email','required'=>'true')); ?>
-                <?php echo $form->error($model,'email'); ?>
-              </div>
+          <div class="control-group">
+            <div class="controls">
+              <?php echo $form->labelEx($model,'email'); ?>
+              <?php echo $form->emailField($model,'email',array('size'=>60,'maxlength'=>250,'class'=>'form-control','placeholder'=>'Email','required'=>'true')); ?>
+              <?php echo $form->error($model,'email'); ?>
             </div>
+          </div>
           <div class="control-group">
             <div class="controls">
               <?php echo $form->labelEx($model,'password'); ?>
@@ -225,94 +243,82 @@
               <?php echo $form->error($model,'password'); ?>
             </div>
           </div>
-            <div class="control-group">
-              <button type="submit" class="btn btn btn-danger btn-primary">Registrar</button>
-          </fieldset>
-       
-          <?php $this->endWidget(); ?>
+          <div class="control-group">
+            <button type="submit" class="btn btn btn-danger btn-primary">Registrar</button>
+            <?php $this->endWidget(); ?>
+          </div> 
         </div> 
       </div> 
-    </div> 
+    </div>
+
 
 <!-- ACCESO -->
-<div id="ourServices">
-   <div class="container" id="Acceso">      
-    <h4>
-      ¿Ya estás registrado?
-    </h4>
-      <div class="row-fluid">
-        <button type="button" class="btn btn btn-danger btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@getbootstrap">
-          Inicia Sesión
-        </button>
+
+  <div class="container" id="Acceso">      
         
-        <div class="modal fade" id="exampleModal" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                   <span aria-hidden="true">&times;
-                   </span>
-                </button>
+      <div class="modal fade" id="exampleModal" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;
+                </span>
+              </button>
                 <h4 class="modal-title" id="exampleModalLabel">Iniciar Sesión</h4>
+            </div>
+            <div class="form">
+              <?php
+                      /* @var $this SiteController */
+                      /* @var $model LoginForm */
+                      /* @var $form CActiveForm  */
+
+              $this->pageTitle=Yii::app()->name . ' - Login';
+              $this->breadcrumbs=array(
+                'Login',
+              );
+              ?>
+              <?php $form=$this->beginWidget('CActiveForm', array(
+              'id'=>'login-form',
+              'enableClientValidation'=>true,
+              'clientOptions'=>array(
+                'validateOnSubmit'=>true,
+              ),
+              )); ?>
+              <div class="form-group">
+                <?php echo $form->emailField($model,'email',array('size'=>60,'maxlength'=>250,'class'=>'form-control','placeholder'=>'Email','required'=>'true')); ?>
+                <?php echo $form->error($model,'email'); ?>
               </div>
-                          
-
-                  <div class="form">
-                      <?php
-                              /* @var $this SiteController */
-                              /* @var $model LoginForm */
-                              /* @var $form CActiveForm  */
-
-                      $this->pageTitle=Yii::app()->name . ' - Login';
-                      $this->breadcrumbs=array(
-                        'Login',
-                      );
-                      ?>
-                      <?php $form=$this->beginWidget('CActiveForm', array(
-                      'id'=>'login-form',
-                      'enableClientValidation'=>true,
-                      'clientOptions'=>array(
-                        'validateOnSubmit'=>true,
-                      ),
-                      )); ?>
-                      <div class="form-group">
-                        <?php echo $form->emailField($model,'email',array('size'=>60,'maxlength'=>250,'class'=>'form-control','placeholder'=>'Email','required'=>'true')); ?>
-                        <?php echo $form->error($model,'email'); ?>
-                      </div>
-
-                      <div class="form-group">
-                        
-                        <?php echo $form->passwordField($model,'password',array('size'=>60,'maxlength'=>250,'class'=>'form-control','placeholder'=>'Contraseña','required'=>'true')); ?>
-                        <?php echo $form->error($model,'password'); ?>
-                      </div>
-                     
-                      <div class="form-group buttons">
-                      <!-- <input type="submit" class="btn btn-danger btn-primary" value="Iniciar"> -->
-                        <?php echo CHtml::submitButton('Iniciar',array('class'=>'btn btn-danger btn-primary'));?>
-                        <button type="button" class="btn btn btn-danger btn-primary" data-dismiss="modal">Cerrar</button>
-                      </div>
-                    <?php $this->endWidget(); ?>
-                  
-                  </div><!-- form -->
-                </div>
+              <div class="form-group">             
+                <?php echo $form->passwordField($model,'password',array('size'=>60,'maxlength'=>250,'class'=>'form-control','placeholder'=>'Contraseña','required'=>'true')); ?>
+                <?php echo $form->error($model,'password'); ?>
+              </div>   
+              <div class="form-group buttons">
+                  <!-- <input type="submit" class="btn btn-danger btn-primary" value="Iniciar"> -->
+                  <?php echo CHtml::submitButton('Iniciar',array('class'=>'btn btn-danger btn-primary'));?>
+                <button type="button" class="btn btn btn-danger btn-primary" data-dismiss="modal">Cerrar</button>
               </div>
+              <?php $this->endWidget(); ?>
+            </div><!-- form -->
           </div>
         </div>
       </div>
-    </div> 
+    </div>
+  
 
-<!-- PIE DE PAGINA -->              
+
+  <!-- PIE DE PAGINA -->              
   <div class="footerSection container">       
     <div class=" span4 socialicon">
-        <a class="facebook" href="https://www.facebook.com/events/1420970331536992/" target="_blank"></a>
-        <!-- <a class="twitter" href="http://www.twitter.com/xtendify"></a> -->
-        <!-- <a class="html5" href="#"></a> -->
-        <!-- <a class="icon2" href="#"></a> -->
+      <a class="facebook" href="https://www.facebook.com/events/1420970331536992/" target="_blank"></a>
+      <!-- <a class="twitter" href="http://www.twitter.com/xtendify"></a> -->
+      <!-- <a class="html5" href="#"></a> -->
+      <!-- <a class="icon2" href="#"></a> -->
     </div>
     <div class="span8 copyright"><p>  Instituto Tecnológico de Celaya | CITEC  </p>
     </div>
   </div>
 </div>
+
 
 <a href="#top" class="go-top"><i class="icon-arrow-up"></i></a>
 

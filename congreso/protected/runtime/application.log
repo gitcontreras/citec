@@ -1214,3 +1214,262 @@ Stack trace:
 #18 {main}
 REQUEST_URI=/citec/congreso/index.php?r=site/login
 ---
+2015/04/05 02:30:42 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'bdcitec.usuarios' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `usuarios`.
+in C:\xampp\htdocs\citec\congreso\protected\controllers\UsuariosController.php (136)
+in C:\xampp\htdocs\citec\congreso\index.php (13)
+2015/04/05 02:30:42 [error] [exception.CDbException] exception 'CDbException' with message 'The table "usuarios" for active record class "Usuarios" cannot be found in the database.' in C:\xampp\htdocs\citec\framework\db\ar\CActiveRecord.php:2385
+Stack trace:
+#0 C:\xampp\htdocs\citec\framework\db\ar\CActiveRecord.php(411): CActiveRecordMetaData->__construct(Object(Usuarios))
+#1 C:\xampp\htdocs\citec\framework\db\ar\CActiveRecord.php(79): CActiveRecord->getMetaData()
+#2 C:\xampp\htdocs\citec\congreso\protected\controllers\UsuariosController.php(136): CActiveRecord->__construct('search')
+#3 C:\xampp\htdocs\citec\framework\web\actions\CInlineAction.php(49): UsuariosController->actionAdmin()
+#4 C:\xampp\htdocs\citec\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\citec\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\citec\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\citec\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\citec\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\xampp\htdocs\citec\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\citec\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\citec\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\citec\framework\web\CWebApplication.php(282): CController->run('admin')
+#13 C:\xampp\htdocs\citec\framework\web\CWebApplication.php(141): CWebApplication->runController('usuarios/admin')
+#14 C:\xampp\htdocs\citec\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\citec\congreso\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/citec/congreso/index.php?r=usuarios/admin
+HTTP_REFERER=http://localhost/citec/congreso/index.php?r=site/login
+---
+2015/04/05 02:31:04 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'bdcitec.usuarios' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `usuarios`.
+in C:\xampp\htdocs\citec\congreso\protected\controllers\UsuariosController.php (136)
+in C:\xampp\htdocs\citec\congreso\index.php (13)
+2015/04/05 02:31:04 [error] [exception.CDbException] exception 'CDbException' with message 'The table "usuarios" for active record class "Usuarios" cannot be found in the database.' in C:\xampp\htdocs\citec\framework\db\ar\CActiveRecord.php:2385
+Stack trace:
+#0 C:\xampp\htdocs\citec\framework\db\ar\CActiveRecord.php(411): CActiveRecordMetaData->__construct(Object(Usuarios))
+#1 C:\xampp\htdocs\citec\framework\db\ar\CActiveRecord.php(79): CActiveRecord->getMetaData()
+#2 C:\xampp\htdocs\citec\congreso\protected\controllers\UsuariosController.php(136): CActiveRecord->__construct('search')
+#3 C:\xampp\htdocs\citec\framework\web\actions\CInlineAction.php(49): UsuariosController->actionAdmin()
+#4 C:\xampp\htdocs\citec\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\citec\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\citec\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\citec\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\citec\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\xampp\htdocs\citec\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\citec\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\citec\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\citec\framework\web\CWebApplication.php(282): CController->run('admin')
+#13 C:\xampp\htdocs\citec\framework\web\CWebApplication.php(141): CWebApplication->runController('usuarios/admin')
+#14 C:\xampp\htdocs\citec\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\citec\congreso\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/citec/congreso/index.php?r=usuarios/admin
+HTTP_REFERER=http://localhost/citec/congreso/index.php?r=site/login
+---
+2015/04/05 02:36:11 [error] [exception.CException] exception 'CException' with message 'Property "Usuarios.id_usuario" is not defined.' in C:\xampp\htdocs\citec\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\citec\framework\db\ar\CActiveRecord.php(145): CComponent->__get('id_usuario')
+#1 C:\xampp\htdocs\citec\framework\web\helpers\CHtml.php(2728): CActiveRecord->__get('id_usuario')
+#2 C:\xampp\htdocs\citec\framework\web\helpers\CHtml.php(2451): CHtml::resolveValue(Object(Usuarios), 'id_usuario')
+#3 C:\xampp\htdocs\citec\framework\web\helpers\CHtml.php(1533): CHtml::activeInputField('text', Object(Usuarios), 'id_usuario', Array)
+#4 C:\xampp\htdocs\citec\framework\web\widgets\CActiveForm.php(792): CHtml::activeTextField(Object(Usuarios), 'id_usuario', Array)
+#5 C:\xampp\htdocs\citec\congreso\protected\views\usuarios\_search.php(16): CActiveForm->textField(Object(Usuarios), 'id_usuario', Array)
+#6 C:\xampp\htdocs\citec\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\citec\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#8 C:\xampp\htdocs\citec\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#9 C:\xampp\htdocs\citec\congreso\protected\views\usuarios\admin.php(40): CController->renderPartial('_search', Array)
+#10 C:\xampp\htdocs\citec\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#11 C:\xampp\htdocs\citec\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#12 C:\xampp\htdocs\citec\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#13 C:\xampp\htdocs\citec\framework\web\CController.php(782): CController->renderPartial('admin', Array, true)
+#14 C:\xampp\htdocs\citec\congreso\protected\controllers\UsuariosController.php(143): CController->render('admin', Array)
+#15 C:\xampp\htdocs\citec\framework\web\actions\CInlineAction.php(49): UsuariosController->actionAdmin()
+#16 C:\xampp\htdocs\citec\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#17 C:\xampp\htdocs\citec\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#18 C:\xampp\htdocs\citec\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#19 C:\xampp\htdocs\citec\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#20 C:\xampp\htdocs\citec\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#21 C:\xampp\htdocs\citec\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#22 C:\xampp\htdocs\citec\framework\web\CController.php(291): CFilterChain->run()
+#23 C:\xampp\htdocs\citec\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#24 C:\xampp\htdocs\citec\framework\web\CWebApplication.php(282): CController->run('admin')
+#25 C:\xampp\htdocs\citec\framework\web\CWebApplication.php(141): CWebApplication->runController('usuarios/admin')
+#26 C:\xampp\htdocs\citec\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#27 C:\xampp\htdocs\citec\congreso\index.php(13): CApplication->run()
+#28 {main}
+REQUEST_URI=/citec/congreso/index.php?r=usuarios/admin
+HTTP_REFERER=http://localhost/citec/congreso/index.php?r=site/login
+---
+2015/04/05 02:40:05 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'bdcitec.usuarios' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `usuarios`.
+in C:\xampp\htdocs\citec\congreso\protected\controllers\UsuariosController.php (136)
+in C:\xampp\htdocs\citec\congreso\index.php (13)
+2015/04/05 02:40:05 [error] [exception.CDbException] exception 'CDbException' with message 'The table "usuarios" for active record class "Usuarios" cannot be found in the database.' in C:\xampp\htdocs\citec\framework\db\ar\CActiveRecord.php:2385
+Stack trace:
+#0 C:\xampp\htdocs\citec\framework\db\ar\CActiveRecord.php(411): CActiveRecordMetaData->__construct(Object(Usuarios))
+#1 C:\xampp\htdocs\citec\framework\db\ar\CActiveRecord.php(79): CActiveRecord->getMetaData()
+#2 C:\xampp\htdocs\citec\congreso\protected\controllers\UsuariosController.php(136): CActiveRecord->__construct('search')
+#3 C:\xampp\htdocs\citec\framework\web\actions\CInlineAction.php(49): UsuariosController->actionAdmin()
+#4 C:\xampp\htdocs\citec\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\citec\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\citec\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\citec\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\citec\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\xampp\htdocs\citec\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\citec\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\citec\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\citec\framework\web\CWebApplication.php(282): CController->run('admin')
+#13 C:\xampp\htdocs\citec\framework\web\CWebApplication.php(141): CWebApplication->runController('usuarios/admin')
+#14 C:\xampp\htdocs\citec\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\citec\congreso\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/citec/congreso/index.php?r=usuarios/admin
+HTTP_REFERER=http://localhost/citec/congreso/index.php?r=site/login
+---
+2015/04/05 02:40:38 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'bdcitec.usuarios' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `usuarios`.
+in C:\xampp\htdocs\citec\congreso\protected\controllers\UsuariosController.php (136)
+in C:\xampp\htdocs\citec\congreso\index.php (13)
+2015/04/05 02:40:38 [error] [exception.CDbException] exception 'CDbException' with message 'The table "usuarios" for active record class "Usuarios" cannot be found in the database.' in C:\xampp\htdocs\citec\framework\db\ar\CActiveRecord.php:2385
+Stack trace:
+#0 C:\xampp\htdocs\citec\framework\db\ar\CActiveRecord.php(411): CActiveRecordMetaData->__construct(Object(Usuarios))
+#1 C:\xampp\htdocs\citec\framework\db\ar\CActiveRecord.php(79): CActiveRecord->getMetaData()
+#2 C:\xampp\htdocs\citec\congreso\protected\controllers\UsuariosController.php(136): CActiveRecord->__construct('search')
+#3 C:\xampp\htdocs\citec\framework\web\actions\CInlineAction.php(49): UsuariosController->actionAdmin()
+#4 C:\xampp\htdocs\citec\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\citec\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\citec\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\citec\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\citec\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\xampp\htdocs\citec\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\citec\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\citec\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\citec\framework\web\CWebApplication.php(282): CController->run('admin')
+#13 C:\xampp\htdocs\citec\framework\web\CWebApplication.php(141): CWebApplication->runController('usuarios/admin')
+#14 C:\xampp\htdocs\citec\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\citec\congreso\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/citec/congreso/index.php?r=usuarios/admin
+HTTP_REFERER=http://localhost/citec/congreso/index.php?r=site/login
+---
+2015/04/07 05:39:22 [error] [php] Array to string conversion (C:\xampp\htdocs\citec\congreso\protected\views\layouts\public\main.php:30)
+Stack trace:
+#0 C:\xampp\htdocs\citec\framework\web\widgets\CContentDecorator.php(76): SiteController->renderFile()
+#1 C:\xampp\htdocs\citec\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate()
+#2 C:\xampp\htdocs\citec\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput()
+#3 C:\xampp\htdocs\citec\framework\web\CBaseController.php(214): CContentDecorator->run()
+#4 C:\xampp\htdocs\citec\framework\web\CBaseController.php(308): SiteController->endWidget()
+#5 C:\xampp\htdocs\citec\congreso\protected\views\layouts\public\column1.php(6): SiteController->endContent()
+#6 C:\xampp\htdocs\citec\framework\web\CBaseController.php(126): require()
+#7 C:\xampp\htdocs\citec\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#8 C:\xampp\htdocs\citec\framework\web\CController.php(784): SiteController->renderFile()
+#9 C:\xampp\htdocs\citec\congreso\protected\controllers\SiteController.php(95): SiteController->render()
+#10 C:\xampp\htdocs\citec\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#11 C:\xampp\htdocs\citec\framework\web\CController.php(308): CInlineAction->runWithParams()
+#12 C:\xampp\htdocs\citec\framework\web\CController.php(286): SiteController->runAction()
+#13 C:\xampp\htdocs\citec\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#14 C:\xampp\htdocs\citec\framework\web\CWebApplication.php(282): SiteController->run()
+#15 C:\xampp\htdocs\citec\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#16 C:\xampp\htdocs\citec\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#17 C:\xampp\htdocs\citec\congreso\index.php(13): CWebApplication->run()
+REQUEST_URI=/citec/congreso/index.php?r=site/index
+in C:\xampp\htdocs\citec\congreso\protected\views\layouts\public\main.php (30)
+in C:\xampp\htdocs\citec\congreso\protected\views\layouts\public\column1.php (6)
+in C:\xampp\htdocs\citec\congreso\protected\controllers\SiteController.php (95)
+2015/04/07 05:42:55 [error] [php] Illegal string offset 'url' (C:\xampp\htdocs\citec\congreso\protected\views\layouts\public\main.php:30)
+Stack trace:
+#0 C:\xampp\htdocs\citec\framework\web\widgets\CContentDecorator.php(76): SiteController->renderFile()
+#1 C:\xampp\htdocs\citec\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate()
+#2 C:\xampp\htdocs\citec\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput()
+#3 C:\xampp\htdocs\citec\framework\web\CBaseController.php(214): CContentDecorator->run()
+#4 C:\xampp\htdocs\citec\framework\web\CBaseController.php(308): SiteController->endWidget()
+#5 C:\xampp\htdocs\citec\congreso\protected\views\layouts\public\column1.php(6): SiteController->endContent()
+#6 C:\xampp\htdocs\citec\framework\web\CBaseController.php(126): require()
+#7 C:\xampp\htdocs\citec\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#8 C:\xampp\htdocs\citec\framework\web\CController.php(784): SiteController->renderFile()
+#9 C:\xampp\htdocs\citec\congreso\protected\controllers\SiteController.php(92): SiteController->render()
+#10 C:\xampp\htdocs\citec\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#11 C:\xampp\htdocs\citec\framework\web\CController.php(308): CInlineAction->runWithParams()
+#12 C:\xampp\htdocs\citec\framework\web\CController.php(286): SiteController->runAction()
+#13 C:\xampp\htdocs\citec\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#14 C:\xampp\htdocs\citec\framework\web\CWebApplication.php(282): SiteController->run()
+#15 C:\xampp\htdocs\citec\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#16 C:\xampp\htdocs\citec\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#17 C:\xampp\htdocs\citec\congreso\index.php(13): CWebApplication->run()
+REQUEST_URI=/citec/congreso/index.php?r=site/index
+in C:\xampp\htdocs\citec\congreso\protected\views\layouts\public\main.php (30)
+in C:\xampp\htdocs\citec\congreso\protected\views\layouts\public\column1.php (6)
+in C:\xampp\htdocs\citec\congreso\protected\controllers\SiteController.php (92)
+2015/04/07 05:43:57 [error] [exception.CException] exception 'CException' with message 'Alias "application.components.MyMenu" is invalid. Make sure it points to an existing PHP file and the file is readable.' in C:\xampp\htdocs\citec\framework\YiiBase.php:323
+Stack trace:
+#0 C:\xampp\htdocs\citec\framework\web\CWidgetFactory.php(146): YiiBase::import('application.com...', true)
+#1 C:\xampp\htdocs\citec\framework\web\CBaseController.php(146): CWidgetFactory->createWidget(Object(SiteController), 'application.com...', Array)
+#2 C:\xampp\htdocs\citec\framework\web\CBaseController.php(180): CBaseController->createWidget('application.com...', Array)
+#3 C:\xampp\htdocs\citec\congreso\protected\controllers\SiteController.php(72): CBaseController->widget('application.com...', Array)
+#4 C:\xampp\htdocs\citec\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#5 C:\xampp\htdocs\citec\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\citec\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#7 C:\xampp\htdocs\citec\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\citec\framework\web\CWebApplication.php(282): CController->run('index')
+#9 C:\xampp\htdocs\citec\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#10 C:\xampp\htdocs\citec\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\citec\congreso\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/citec/congreso/index.php?r=site/index
+---
+2015/04/07 05:44:29 [error] [php] include(MyMenu.php): failed to open stream: No such file or directory (C:\xampp\htdocs\citec\framework\YiiBase.php:432)
+Stack trace:
+#0 unknown(0): spl_autoload_call()
+#1 C:\xampp\htdocs\citec\framework\YiiBase.php(303): class_exists()
+#2 C:\xampp\htdocs\citec\framework\web\CWidgetFactory.php(146): import()
+#3 C:\xampp\htdocs\citec\framework\web\CBaseController.php(146): CWidgetFactory->createWidget()
+#4 C:\xampp\htdocs\citec\framework\web\CBaseController.php(180): SiteController->createWidget()
+#5 C:\xampp\htdocs\citec\congreso\protected\controllers\SiteController.php(80): SiteController->widget()
+#6 C:\xampp\htdocs\citec\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#7 C:\xampp\htdocs\citec\framework\web\CController.php(308): CInlineAction->runWithParams()
+#8 C:\xampp\htdocs\citec\framework\web\CController.php(286): SiteController->runAction()
+#9 C:\xampp\htdocs\citec\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#10 C:\xampp\htdocs\citec\framework\web\CWebApplication.php(282): SiteController->run()
+#11 C:\xampp\htdocs\citec\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#12 C:\xampp\htdocs\citec\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#13 C:\xampp\htdocs\citec\congreso\index.php(13): CWebApplication->run()
+REQUEST_URI=/citec/congreso/index.php?r=site/index
+in C:\xampp\htdocs\citec\congreso\protected\controllers\SiteController.php (80)
+in C:\xampp\htdocs\citec\congreso\index.php (13)
+2015/04/07 05:47:15 [error] [exception.CException] exception 'CException' with message 'Alias "application.extensions.menu.SMenu" is invalid. Make sure it points to an existing PHP file and the file is readable.' in C:\xampp\htdocs\citec\framework\YiiBase.php:323
+Stack trace:
+#0 C:\xampp\htdocs\citec\framework\web\CWidgetFactory.php(146): YiiBase::import('application.ext...', true)
+#1 C:\xampp\htdocs\citec\framework\web\CBaseController.php(146): CWidgetFactory->createWidget(Object(SiteController), 'application.ext...', Array)
+#2 C:\xampp\htdocs\citec\framework\web\CBaseController.php(180): CBaseController->createWidget('application.ext...', Array)
+#3 C:\xampp\htdocs\citec\congreso\protected\controllers\SiteController.php(137): CBaseController->widget('application.ext...', Array)
+#4 C:\xampp\htdocs\citec\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#5 C:\xampp\htdocs\citec\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\citec\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#7 C:\xampp\htdocs\citec\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\citec\framework\web\CWebApplication.php(282): CController->run('index')
+#9 C:\xampp\htdocs\citec\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#10 C:\xampp\htdocs\citec\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\citec\congreso\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/citec/congreso/index.php?r=site/index
+---
+2015/04/07 05:59:27 [error] [php] Undefined index: url (C:\xampp\htdocs\citec\congreso\protected\views\layouts\public\main.php:30)
+Stack trace:
+#0 C:\xampp\htdocs\citec\framework\web\widgets\CContentDecorator.php(76): SiteController->renderFile()
+#1 C:\xampp\htdocs\citec\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate()
+#2 C:\xampp\htdocs\citec\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput()
+#3 C:\xampp\htdocs\citec\framework\web\CBaseController.php(214): CContentDecorator->run()
+#4 C:\xampp\htdocs\citec\framework\web\CBaseController.php(308): SiteController->endWidget()
+#5 C:\xampp\htdocs\citec\congreso\protected\views\layouts\public\column1.php(6): SiteController->endContent()
+#6 C:\xampp\htdocs\citec\framework\web\CBaseController.php(126): require()
+#7 C:\xampp\htdocs\citec\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#8 C:\xampp\htdocs\citec\framework\web\CController.php(784): SiteController->renderFile()
+#9 C:\xampp\htdocs\citec\congreso\protected\controllers\SiteController.php(94): SiteController->render()
+#10 C:\xampp\htdocs\citec\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#11 C:\xampp\htdocs\citec\framework\web\CController.php(308): CInlineAction->runWithParams()
+#12 C:\xampp\htdocs\citec\framework\web\CController.php(286): SiteController->runAction()
+#13 C:\xampp\htdocs\citec\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#14 C:\xampp\htdocs\citec\framework\web\CWebApplication.php(282): SiteController->run()
+#15 C:\xampp\htdocs\citec\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#16 C:\xampp\htdocs\citec\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#17 C:\xampp\htdocs\citec\congreso\index.php(13): CWebApplication->run()
+REQUEST_URI=/citec/congreso/index.php?r=site/index
+in C:\xampp\htdocs\citec\congreso\protected\views\layouts\public\main.php (30)
+in C:\xampp\htdocs\citec\congreso\protected\views\layouts\public\column1.php (6)
+in C:\xampp\htdocs\citec\congreso\protected\controllers\SiteController.php (94)
