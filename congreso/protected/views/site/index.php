@@ -51,8 +51,8 @@
             </div>
             
             <h4>¿Cuándo?</h4>
-            <p><?php echo $evento->fecha_inicio; ?>
-            </p>
+             fecha inicio:<p><?php echo $evento->fecha_inicio; ?></p>
+             fecha fin:<p><?php echo $evento->fecha_fin; ?></p>
           </div>
           
           <div class="span4">
@@ -109,10 +109,16 @@
           <p><?php echo $evento->costo; ?></p>  
         </div>
         <div class="tab-pane" id="Calendario">
-          Fecha inicio
-          <p><?php echo $evento->fecha_inicio; ?></p>
-          Fecha fin
-          <p><?php echo $evento->fecha_fin; ?></p>
+          
+            <?php foreach ($actividades as $actividades) 
+            {
+            ?>
+            nombre:<p><?php echo $actividades->nombre; ?></p>
+            lugar:<p><?php echo $actividades->lugar; ?></p>
+            fecha inicio:<p><?php echo $actividades->fecha_inicio; ?></p>
+             fecha fin:<p><?php echo $actividades->fecha_fin; ?></p>
+            <?php } ?>
+            
         </div>
         <div class="tab-pane" id="ConvocatoriaPdf">
           <a href="pdfs/<?php echo $evento->convocatoria; ?>" download="Convocatoria" class="btn btn btn-danger btn-primary">

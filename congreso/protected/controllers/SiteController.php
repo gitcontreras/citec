@@ -94,10 +94,13 @@ class SiteController extends Controller
 
            $participantes = Participantes::model()->findAll( $criteria);
           */
+         $actividades = Actividades::model()->findAll();
+
 		$this->render('index',array(
 			'evento'=>$evento,
 			'model'=>$model,
 			'participantes'=>$participantes,
+			 'actividades'=>$actividades,
 		));
 
 
