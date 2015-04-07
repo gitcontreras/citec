@@ -1473,3 +1473,14 @@ REQUEST_URI=/citec/congreso/index.php?r=site/index
 in C:\xampp\htdocs\citec\congreso\protected\views\layouts\public\main.php (30)
 in C:\xampp\htdocs\citec\congreso\protected\views\layouts\public\column1.php (6)
 in C:\xampp\htdocs\citec\congreso\protected\controllers\SiteController.php (94)
+2015/04/07 18:55:44 [error] [php] Undefined variable: participantes (C:\xampp\htdocs\citec\congreso\protected\controllers\SiteController.php:98)
+Stack trace:
+#0 C:\xampp\htdocs\citec\framework\web\CController.php(286): SiteController->runAction()
+#1 C:\xampp\htdocs\citec\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#2 C:\xampp\htdocs\citec\framework\web\CWebApplication.php(282): SiteController->run()
+#3 C:\xampp\htdocs\citec\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\xampp\htdocs\citec\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#5 C:\xampp\htdocs\citec\congreso\index.php(13): CWebApplication->run()
+REQUEST_URI=/citec/congreso/
+in C:\xampp\htdocs\citec\congreso\protected\controllers\SiteController.php (98)
+in C:\xampp\htdocs\citec\congreso\index.php (13)

@@ -74,19 +74,26 @@ class SiteController extends Controller
 		
 
 
-              $participantes = Participantes::model()->findAll();
-          /*
-	      $criteria= new CDbCriteria(); 
-      
+           $participantes = Participantes::model()->findAll();
+         /*
+	       $criteria= new CDbCriteria(); 
+           $participantes_tipos = ParticipantesTipos::model()->tablename();
+           $tipos_de_participantes = TiposDeParticipantes::model()->tablename();
+           $ponentes_actividades= PonentesActividades::model()->tablename();
+           $actividades=Actividades::model()->tablename();
+           $eventos=Eventos::model()->tablename();
         $criteria->join =
-           'left join '.$participantes_tipos.' pt on pt.id_participante = t.id'
-          .'left join '.$tabla2.' PX on PXC.perrito_id = PX.id'
-        ;
-        $criteria->compare('tabla2.tipo',"ponente",true);
+           ' left join '.$participantes_tipos.' pt on pt.id_participante = t.id_participante'
+          .' left join '.$tipos_de_participantes.' tdp on pt.id_tipo = tdp.id_tipo'
+          .' left join '.$ponentes_actividades.' pa on pt.id_participante= pa.id_participante'
+          .' left join '.$actividades.' a on pa.id_actividad= a.id_actividad'
+          .' left join '.$eventos.' e on a.id_evento= e.id_evento';
 
-		     $participante = Participantes::model()->findAll($criteria);
-		*/
+        $criteria->compare('tdp.tipo','congresista',true);
+        $criteria->compare('e.id_evento','1',true);
 
+           $participantes = Participantes::model()->findAll( $criteria);
+          */
 		$this->render('index',array(
 			'evento'=>$evento,
 			'model'=>$model,
