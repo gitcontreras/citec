@@ -17,6 +17,34 @@
       color: #FF0000;
 
   }
+  table, td{
+    border: 1px solid black;
+    background-color: white;
+
+}
+
+th {
+    background-color: green;
+    color: white;
+    border: 1px solid black;
+
+
+}
+#ourServices{
+  background-color: #D8D8D8;
+}
+#portfolioSection{
+  background-color: ;
+}
+
+#blogSection{
+  background-color: ;
+}
+#meetourteamSection{
+  background-color:;
+}
+
+
 </style>
 
 <script>
@@ -93,7 +121,7 @@
         <a href="#Costo" data-toggle="tab">COSTOS</a>
       </li>
       <li>
-      <a href="#Calendario" data-toggle="tab">CALENDARIO</a>
+      <a href="#CONFERENCIAS" data-toggle="tab">CONFERENCIAS</a>
       </li>     
       <li><a href="#ConvocatoriaPdf" data-toggle="tab">CONVOCATORIA</a>
       </li>     
@@ -108,15 +136,55 @@
         <div class="tab-pane active" id="Costo">
           <p><?php echo $evento->costo; ?></p>  
         </div>
-        <div class="tab-pane" id="Calendario">
+        <div class="tab-pane" id="CONFERENCIAS">
           
             <?php foreach ($actividades as $actividades) 
             {
             ?>
-            nombre:<p><?php echo $actividades->nombre; ?></p>
-            lugar:<p><?php echo $actividades->lugar; ?></p>
-            fecha inicio:<p><?php echo $actividades->fecha_inicio; ?></p>
-             fecha fin:<p><?php echo $actividades->fecha_fin; ?></p>
+            <table class="table" width= "100%">
+            <tbody>
+              <tr>
+                <th width= "20%">
+                  Tema:
+                </th>
+                <th width= "20%">
+                  Lugar:
+                  
+                </th>
+                <th width= "20%">
+                 Fecha inicio:
+                  
+                </th>
+                <th width= "20%">
+                  Fecha fin:
+
+                </th>
+              </tr>
+              <tr>
+                
+                <td>
+                  <?php echo $actividades->nombre; ?>
+                  
+                </td>
+                
+                <td>
+                  <?php echo $actividades->lugar; ?>
+                  
+                </td>
+                
+                <td>
+                  <?php echo $actividades->fecha_inicio; ?>
+                  
+                </td>
+                
+                <td>
+                  <?php echo $actividades->fecha_fin; ?>
+                  
+                </td>
+              </tr>
+              </tbody>
+            </table>
+            
             <?php } ?>
             
         </div>

@@ -1,4 +1,9 @@
 <!DOCTYPE html>
+<style type="text/css">
+  body{
+    background-color: white;
+  }
+</style>
 <html lang="en">
   <head>
     <meta charset="utf-8">

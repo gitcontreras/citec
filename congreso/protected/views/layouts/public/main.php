@@ -1,4 +1,13 @@
 <!DOCTYPE html>
+<style type="text/css">
+
+  #headerSection{
+    background-color: white;
+  }
+#carouselSection{
+    background-color: white;
+  }
+</style>
 <html lang="en">
 <head>
     <meta charset="utf-8">
