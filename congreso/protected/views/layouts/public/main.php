@@ -1,5 +1,28 @@
 <!DOCTYPE html>
 <style type="text/css">
+/*
+#menu{
+    background-color: white;
+    opacity:0.6;
+     filter: alpha(opacity=60);
+     position: fixed;
+     right: 60px;
+    top: 0px;
+  }*/
+  #colorfondo:hover{
+    background: #b4e391; /* Old browsers */
+background: -moz-linear-gradient(top,  #b4e391 0%, #61c419 50%, #b4e391 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#b4e391), color-stop(50%,#61c419), color-stop(100%,#b4e391)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #b4e391 0%,#61c419 50%,#b4e391 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #b4e391 0%,#61c419 50%,#b4e391 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #b4e391 0%,#61c419 50%,#b4e391 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #b4e391 0%,#61c419 50%,#b4e391 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b4e391', endColorstr='#b4e391',GradientType=0 ); /* IE6-9 */
+font-family: 'arial';
+  color: #FFFCFE !important;
+
+  }
+  
 
   #headerSection{
     background-color: white;
@@ -28,7 +51,7 @@
     
     <div class="navbar">
     
-      
+      <div id="menu" >
       <div class="nav-collapse">
         <ul class="nav">
 
@@ -36,16 +59,14 @@
           foreach ($this->menu as $key => $value) {
         ?>
             <li>
-              <a href="<?php echo $value['url']; ?>"><?php echo $value['label']; ?></a>
+              <a href="<?php echo $value['url']; ?>" id="colorfondo"><?php echo $value['label'];?></a>
             </li>
         <?php    
           }
         ?>
-
-     
         </ul>
       </div>
-
+      </div>
 
       
       <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">

@@ -43,7 +43,52 @@ th {
 #meetourteamSection{
   background-color:;
 }
-
+#menuAcceso:hover{
+    background: #b4e391; /* Old browsers */
+background: -moz-linear-gradient(top,  #b4e391 0%, #61c419 50%, #b4e391 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#b4e391), color-stop(50%,#61c419), color-stop(100%,#b4e391)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #b4e391 0%,#61c419 50%,#b4e391 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #b4e391 0%,#61c419 50%,#b4e391 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #b4e391 0%,#61c419 50%,#b4e391 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #b4e391 0%,#61c419 50%,#b4e391 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b4e391', endColorstr='#b4e391',GradientType=0 ); /* IE6-9 */
+font-family: 'arial';
+  color: #FFFCFE !important;
+  }
+  
+#botones{
+   font-family: 'arial';
+  color: #FFFCFE !important;
+  font-size: 15px;
+  text-shadow: 1px 1px 0px #ED0000;
+  box-shadow: 1px 1px 1px #040412;
+  padding: 7px 7px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  border: 4px double #191919;
+  background: #10EE00;
+  background: linear-gradient(top,  #30EE00,  #030508);
+  background: -ms-linear-gradient(top,  #30EE00,  #030508);
+  background: -webkit-gradient(linear, left top, left bottom, from(#30EE00), to(#030508));
+  background: -moz-linear-gradient(top,  #30EE00,  #030508);
+}
+#botones:hover {
+  color: #22FF00 !important;
+  background: #030000;
+  background: linear-gradient(top,  #000000,  #FF0000);
+  background: -ms-linear-gradient(top,  #000000,  #FF0000);
+  background: -webkit-gradient(linear, left top, left bottom, from(#000000), to(#FF0000));
+  background: -moz-linear-gradient(top,  #000000,  #FF0000);
+}
+#botonDescarga:hover {
+  color: #22FF00 !important;
+  background: #030000;
+  background: linear-gradient(top,  #000000,  #FF0000);
+  background: -ms-linear-gradient(top,  #000000,  #FF0000);
+  background: -webkit-gradient(linear, left top, left bottom, from(#000000), to(#FF0000));
+  background: -moz-linear-gradient(top,  #000000,  #FF0000);
+}*/
 
 </style>
 
@@ -189,7 +234,7 @@ th {
             
         </div>
         <div class="tab-pane" id="ConvocatoriaPdf">
-          <a href="pdfs/<?php echo $evento->convocatoria; ?>" download="Convocatoria" class="btn btn btn-danger btn-primary">
+          <a href="pdfs/<?php echo $evento->convocatoria; ?>" id="botonDescarga" class="btn btn-success" download="Convocatoria">
             Descargar convocatoria
           </a>
         </div>
@@ -212,7 +257,7 @@ th {
         <div class="inner">
           <h1>Lineamientos</h1>
           <p>En esete documento encontrará la especificación de lineamientos requeridos para la publicación de artículos</p>
-          <a  href="pdfs/<?php echo $evento->convocatoria; ?>" download="Lineamiento" class="btn btn-danger btn-large btn-primary ">Ver Documento</a>
+          <a  href="pdfs/<?php echo $evento->convocatoria; ?>" id="botones" download="Lineamiento" >Ver Documento</a>
         </div>
       </div>  
         
@@ -229,7 +274,7 @@ th {
           <div class="inner">
             <h1>Formato</h1>
             <p>Conozca y descargue el formato a utilizar para el artículo final.</p>
-            <a  href="pdfs/<?php echo $evento->convocatoria; ?>" download="Formato" class="btn btn-danger btn-large btn-primary">Ver Documento</a>
+            <a  href="pdfs/<?php echo $evento->convocatoria; ?>" download="Formato" id="botones">Ver Documento</a>
           </div>
         </div>
     </div>    
@@ -318,7 +363,7 @@ th {
             </div>
           </div>
           <div class="control-group">
-            <button type="submit" class="btn btn btn-danger btn-primary">Registrar</button>
+            <button type="submit" id="botones">Registrar</button>
             <?php $this->endWidget(); ?>
           </div> 
         </div> 
@@ -334,7 +379,7 @@ th {
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <button type="button" class="close" id="botones" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;
                 </span>
               </button>
@@ -368,8 +413,8 @@ th {
               </div>   
               <div class="form-group buttons">
                   <!-- <input type="submit" class="btn btn-danger btn-primary" value="Iniciar"> -->
-                  <?php echo CHtml::submitButton('Iniciar',array('class'=>'btn btn-danger btn-primary'));?>
-                <button type="button" class="btn btn btn-danger btn-primary" data-dismiss="modal">Cerrar</button>
+                  <?php echo CHtml::submitButton('Iniciar',array('id'=>'botones'));?>
+                <button type="button" id="botones" data-dismiss="modal">Cerrar</button>
               </div>
               <?php $this->endWidget(); ?>
             </div><!-- form -->
