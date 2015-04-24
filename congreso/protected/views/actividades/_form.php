@@ -39,13 +39,59 @@
 
 	<div class="form-group">
 		<?php echo $form->labelEx($model,'fecha_inicio'); ?>
-		<?php echo $form->textField($model,'fecha_inicio',array('class'=>'form-control')); ?>
+		  	<?php 
+          $this->widget('application.extensions.timepicker.EJuiDateTimePicker',array(
+         'model'=>$model,
+         'attribute'=>'fecha_inicio',
+         'language' => 'es',
+         'options'=>array(
+    	 'monthNames' => array('Enero,Febrero,Marzo,Abril,Mayo,Junio,Julio,Agosto,Septiembre,Octubre,Noviembre,
+    	 	                   Diciembre'),
+        'monthNamesShort' => array("Ene","Feb","Mar","Abr","May","Jun","Jul","Ago","Sep","Oct","Nov","Dic"),
+        'dayNames' => array('Domingo,Lunes,Martes,Miercoles,Jueves,Viernes,Sabado'),
+        'dayNamesMin' => array('Do','Lu','Ma','Mi','Ju','Vi','Sa'),
+        'showAnim'=>'slide',
+                'showSecond'=>false,
+                'ampm'=>false,
+                'timeFormat' => 'hh:mm:ss',
+                'dateFormat'=>'yy-mm-dd',
+                'changeMonth' => true,
+                'changeYear' => true,
+                'showAnim'=>'fold',
+                'minDate'=>'-1y',
+                'maxDate'=>'+5y',
+           ),
+         ));
+		 ?>
 		<?php echo $form->error($model,'fecha_inicio'); ?>
 	</div>
 
 	<div class="form-group">
 		<?php echo $form->labelEx($model,'fecha_fin'); ?>
-		<?php echo $form->textField($model,'fecha_fin',array('class'=>'form-control')); ?>
+		  	<?php 
+          $this->widget('application.extensions.timepicker.EJuiDateTimePicker',array(
+         'model'=>$model,
+         'attribute'=>'fecha_fin',
+         'language' => 'es',
+         'options'=>array(
+    	 'monthNames' => array('Enero,Febrero,Marzo,Abril,Mayo,Junio,Julio,Agosto,Septiembre,Octubre,Noviembre,
+    	 	                   Diciembre'),
+        'monthNamesShort' => array("Ene","Feb","Mar","Abr","May","Jun","Jul","Ago","Sep","Oct","Nov","Dic"),
+        'dayNames' => array('Domingo,Lunes,Martes,Miercoles,Jueves,Viernes,Sabado'),
+        'dayNamesMin' => array('Do','Lu','Ma','Mi','Ju','Vi','Sa'),
+        'showAnim'=>'slide',
+                'showSecond'=>false,
+                'ampm'=>false,
+                'timeFormat' => 'hh:mm:ss',
+                'dateFormat'=>'yy-mm-dd',
+                'changeMonth' => true,
+                'changeYear' => true,
+                'showAnim'=>'fold',
+                'minDate'=>'-1y',
+                'maxDate'=>'+5y',
+           ),
+         ));
+		 ?>
 		<?php echo $form->error($model,'fecha_fin'); ?>
 	</div>
 
