@@ -21,7 +21,10 @@
 
 	<div class="form-group">
 		<?php echo $form->labelEx($model,'id_tipo'); ?>
-		<?php echo $form->textField($model,'id_tipo',array('class'=>'form-control')); ?>
+        <?php
+          echo $form->dropDownList($model,'id_tipo',
+          CHtml::listData(TipoDeActividades::model()->findAll(),'id_tipo','tipo'),
+         array('empty'=> 'Selecciona un tipo...', 'class'=>'form-control'));// si esta vacio ?>
 		<?php echo $form->error($model,'id_tipo'); ?>
 	</div>
 
