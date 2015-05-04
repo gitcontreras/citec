@@ -26,7 +26,10 @@ $('.search-form form').submit(function(){
 ");
 ?>
 
-<h1>Manage Eventoses</h1>
+<h1>Manejo de Eventos</h1>
+
+<div class="row">
+    <div class="col-md-7">
 
 <p>
 You may optionally enter a comparison operator (<b>&lt;</b>, <b>&lt;=</b>, <b>&gt;</b>, <b>&gt;=</b>, <b>&lt;&gt;</b>
@@ -57,7 +60,37 @@ or <b>=</b>) at the beginning of each of your search values to specify how the c
 		'mas_informacion',
 		*/
 		array(
+              'class'=>'CButtonColumn',
+              'template'=>'{view}',
+              'header'=>'ver Participantes',
+              'buttons'=>array(
+                   'view'=>array(
+                   	   'url'=>'Yii::app()->createurl("participantes/admin",array(
+                   	   		"id_evento"=>$data->id_evento
+                   	   	))'
+                   	)
+              	),
+			),
+		array(
 			'class'=>'CButtonColumn',
 		),
 	),
 )); ?>
+</div>	
+<div class="col-md-5">
+
+    		<div class="panel panel-primary">
+    		  <div class="panel-heading">
+    		    <h3 class="panel-title">Nuevo Evento</h3>
+    		  </div>
+    		  <div class="panel-body">
+    	    		
+				<?php 
+					$this->renderPartial('_form', 
+						array('model'=>$model,)); 
+				?>
+    		  </div>
+    		</div>
+        
+    </div>
+</div>
