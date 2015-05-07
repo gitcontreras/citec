@@ -234,7 +234,7 @@ font-family: 'arial';
             
         </div>
         <div class="tab-pane" id="ConvocatoriaPdf">
-          <a href="pdfs/<?php echo $evento->convocatoria; ?>" id="botonDescarga" class="btn btn-success" download="Convocatoria">
+          <a href="pdfs/Convocatoria.pdf" id="botonDescarga" class="btn btn-success" download="ConvocatoriaCITEC">
             Descargar convocatoria
           </a>
         </div>
@@ -257,7 +257,7 @@ font-family: 'arial';
         <div class="inner">
           <h1>Lineamientos</h1>
           <p>En esete documento encontrará la especificación de lineamientos requeridos para la publicación de artículos</p>
-          <a  href="pdfs/<?php echo $evento->convocatoria; ?>" id="botones" download="Lineamiento" >Ver Documento</a>
+          <a  href="pdfs/Lineamientos.pdf" id="botones" download="LineamientosCITEC" >Ver Documento</a>
         </div>
       </div>  
         
@@ -274,7 +274,7 @@ font-family: 'arial';
           <div class="inner">
             <h1>Formato</h1>
             <p>Conozca y descargue el formato a utilizar para el artículo final.</p>
-            <a  href="pdfs/<?php echo $evento->convocatoria; ?>" download="Formato" id="botones">Ver Documento</a>
+            <a  href="pdfs/Formato.pdf" download="FormatoCITEC" id="botones">Ver Documento</a>
           </div>
         </div>
     </div>    
