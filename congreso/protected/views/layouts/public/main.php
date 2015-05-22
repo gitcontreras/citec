@@ -64,6 +64,8 @@ font-family: 'arial';
         <?php    
           }
         ?>
+
+         <a href="?r=site/login" id="colorfondo">Iniciar Sesión</a>
         </ul>
       </div>
       </div>
